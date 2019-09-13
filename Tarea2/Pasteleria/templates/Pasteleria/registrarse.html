@@ -4,10 +4,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>log in</title>
+    <title>registro</title>
 
 
-        <!-- Bootstrap core JavaScript-->
+            <!-- Bootstrap core JavaScript-->
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
@@ -39,27 +39,33 @@
 <div align="center">
     <div class="card border-dark mb-3" style="max-width: 18rem;">
       <div class="card-header">log in</div>
-        <form action="tryLogin/" method="post">
+        <h4>Registra tus datos</h4>
+        <form action="./tryRegistrar/" method="post">
             {% csrf_token %}
 
             <label for="nombre">nombre</label>
             <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Su nombre aca" name="nombre">
 
+            <label for="correo">correo</label>
+            <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="Su correo aca" name="correo">
+
+            <label for="telefono">telefono</label>
+            <input type="number" class="form-control" id="telefono" placeholder="telefono" name="telefono">
 
 
             <label for="contraseña">contraseña</label>
             <input type="password" class="form-control" id="contraseña" placeholder="contraseña" name="contraseña">
 
+            <label for="contraseña2">confirmar contraseña</label>
+            <input type="password" class="form-control" id="contraseña2" placeholder="contraseña2" name="contraseña2">
 
 
-            <button type="submit" class="btn btn-primary">Entrar</button>
+
+            <button type="submit" class="btn btn-primary">registrame</button>
 
 
         </form>
-        <div align="center">
-            <button style="width: 35%" class=" btn btn-secondary" onclick="location.href='{% url 'registro' %}'">Registrate</button>
 
-        </div>
     </div>
 </div>
 </body>

@@ -4,7 +4,12 @@
 
 <div class="col">
     <div class="row">
-        <p>hola {{p}}</p>
+        <p>hola tus datos son: </p>
+    </div>
+    <div class>
+        {% for parametro in llaveDatos%}
+            <p>{{parametro}}</p>
+        {% endfor%}
     </div>
     <div class="row">
         {% load static %}
