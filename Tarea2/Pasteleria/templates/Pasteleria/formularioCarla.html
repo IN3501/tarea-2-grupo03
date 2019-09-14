@@ -5,10 +5,11 @@
 {% block content %}
 
 <div id="descripcion" class="container">
-    <h1>Arma tu torta</h1>
+
 
     <form action="#" autocomplete="off">
-	
+	<h1>Arma tu torta</h1>
+
     <div class="form-group">
       <label for="exampleFormControlSelect1">Cantidad de porciones</label>
       <select class="form-control" id="exampleSelect1" name="inputPorciones">
@@ -31,100 +32,155 @@
       </select>
     </div>
 
-    Relleno
-    <div class="form-group">
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="inputManjar">
-      <label class="form-check-label" for="exampleCheck1">Manjar</label>
-    </div>
+        <div class="card mb-3">
+          <div class="card-header" style="background: #f5c6cb">
+            <i class="fas fa-table"></i>
+            Rellenos
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck2" name="inputMermelada1">
-      <label class="form-check-label" for="exampleCheck2">Mermelada Frambuesa</label>
-  	</div>
 
-       <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck3" name="inputMermelada2">
-      <label class="form-check-label" for="exampleCheck3">Mermelada Frutilla</label>
-  	</div>
 
-     <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck4" name="inputMermelada3">
-      <label class="form-check-label" for="exampleCheck4">Mermelada Mix frutos rojos</label>
-    </div>
 
-     <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck5" name="inputMermelada4">
-      <label class="form-check-label" for="exampleCheck5">Mermelada Duranznos</label>
-  	</div>
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck6" name="inputCrema1">
-      <label class="form-check-label" for="exampleCheck6">Crema mantequilla batida Blanca </label>
-    </div>
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck7" name="inputCrema2">
-      <label class="form-check-label" for="exampleCheck7">Crema mantequilla batida sabor Lucuma </label>
-    </div>
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck8" name="inputCrema3">
-      <label class="form-check-label" for="exampleCheck8">Crema mantequilla batida sabor Maracuyá </label>
-    <div>
-    	
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck9" name="inputCrema4">
-      <label class="form-check-label" for="exampleCheck9">Crema mantequilla batida sabor Frambuesa </label>
-    </div>
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck10" name="inputCrema5">
-      <label class="form-check-label" for="exampleCheck10">Crema mantequilla batida sabor Frandanos </label>
-    </div>
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck11" name="inputCrema6">
-      <label class="form-check-label" for="exampleCheck11">Crema mantequilla batida sabor Mix frutos rojos </label>
-  	</div>
+                  <!-- relleno -->
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck12" name="inputCremaP">
-      <label class="form-check-label" for="exampleCheck12">Crema Pastelera </label>
-  	</div>
+                   <div class="form-group">
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck13" name="inputCremaV">
-      <label class="form-check-label" for="exampleCheck13">Crema Vegetal </label> 
-  	</div>
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1" name="inputManjar">
+                          <label class="form-check-label" for="exampleCheck1">Manjar</label>
+                        </div>
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck14" name="inputCremaI">
-      <label class="form-check-label" for="exampleCheck14">Crema Inglesa </label>   
-  	</div>
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck15" name="inputGanache">
-      <label class="form-check-label" for="exampleCheck15">Ganache Chocolate negro </label> 
-  	</div>
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck2" name="inputMermelada1">
+                          <label class="form-check-label" for="exampleCheck2">Mermelada Frambuesa</label>
+                        </div>
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck16" name="inputFruta1">
-      <label class="form-check-label" for="exampleCheck16">Durazno </label> 
-  	</div>
+                           <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck3" name="inputMermelada2">
+                          <label class="form-check-label" for="exampleCheck3">Mermelada Frutilla</label>
+                        </div>
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck17" name="inputFruta2">
-      <label class="form-check-label" for="exampleCheck17">Piña </label> 
-  	</div>
+                         <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck4" name="inputMermelada3">
+                          <label class="form-check-label" for="exampleCheck4">Mermelada Mix frutos rojos</label>
+                        </div>
 
-    <div class="form-check form-check-inline" >
-      <input type="checkbox" class="form-check-input" id="exampleCheck18" name="inputFruta3">
-      <label class="form-check-label" for="exampleCheck18">Frutillas </label> 
-    </div>
-    </div>
+                         <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck5" name="inputMermelada4">
+                          <label class="form-check-label" for="exampleCheck5">Mermelada Duranznos</label>
+                        </div>
+
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck6" name="inputCrema1">
+                          <label class="form-check-label" for="exampleCheck6">Crema mantequilla batida Blanca </label>
+                        </div>
+
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck7" name="inputCrema2">
+                          <label class="form-check-label" for="exampleCheck7">Crema mantequilla batida sabor Lucuma </label>
+                        </div>
+
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck8" name="inputCrema3">
+                          <label class="form-check-label" for="exampleCheck8">Crema mantequilla batida sabor Maracuyá </label>
+                        <div>
+
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck9" name="inputCrema4">
+                          <label class="form-check-label" for="exampleCheck9">Crema mantequilla batida sabor Frambuesa </label>
+                        </div>
+
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck10" name="inputCrema5">
+                          <label class="form-check-label" for="exampleCheck10">Crema mantequilla batida sabor Frandanos </label>
+                        </div>
+
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck11" name="inputCrema6">
+                          <label class="form-check-label" for="exampleCheck11">Crema mantequilla batida sabor Mix frutos rojos </label>
+                        </div>
+
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck12" name="inputCremaP">
+                          <label class="form-check-label" for="exampleCheck12">Crema Pastelera </label>
+                        </div>
+
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck13" name="inputCremaV">
+                          <label class="form-check-label" for="exampleCheck13">Crema Vegetal </label>
+                        </div>
+
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck14" name="inputCremaI">
+                          <label class="form-check-label" for="exampleCheck14">Crema Inglesa </label>
+                        </div>
+
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck15" name="inputGanache">
+                          <label class="form-check-label" for="exampleCheck15">Ganache Chocolate negro </label>
+                        </div>
+
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck16" name="inputFruta1">
+                          <label class="form-check-label" for="exampleCheck16">Durazno </label>
+                        </div>
+
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck17" name="inputFruta2">
+                          <label class="form-check-label" for="exampleCheck17">Piña </label>
+                        </div>
+
+                        <div class="form-check form-check-inline" >
+                          <input type="checkbox" class="form-check-input" id="exampleCheck18" name="inputFruta3">
+                          <label class="form-check-label" for="exampleCheck18">Frutillas </label>
+                        </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </table>
+
+            </div>
+          </div>
+        </div>
+
+
 
 
     <div class="form-group">
