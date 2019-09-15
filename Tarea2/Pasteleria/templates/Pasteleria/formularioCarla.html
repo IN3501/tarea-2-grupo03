@@ -6,8 +6,7 @@
 
 <div id="descripcion" class="container">
 
-
-    <form action="#" autocomplete="off">
+    <form action="/mostrar_resultado/" method="post" autocomplete="off">{% csrf_token %}
 	<h1>Arma tu torta</h1>
 
     <div class="form-group">
@@ -23,12 +22,12 @@
     <div class="form-group">
       <label for="exampleFormControlSelect1">Base</label>
       <select class="form-control" id="exampleSelect2" name="inputBase">
-        <option value="1">Bizcocho</option>
-        <option value="2">Bizcocho chocolate</option>
-        <option value="3">Merengue</option>
-        <option value="4">Hojarasca</option>
-        <option value="5">Panqueque</option>
-        <option value="6">Red Velvet y nueces</option>
+        <option value="Bizcocho">Bizcocho</option>
+        <option value="Bizcocho de chocolate">Bizcocho chocolate</option>
+        <option value="Merengue">Merengue</option>
+        <option value="Hojarasca">Hojarasca</option>
+        <option value="Panqueque">Panqueque</option>
+        <option value="Red Velvet y nueces">Red Velvet y nueces</option>
       </select>
     </div>
 
@@ -45,11 +44,11 @@
 
                   <!-- relleno -->
 
-                   <div class="form-group">
+                    <div class="form-group">
                    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
 					<div class="row">
 					  <div class="form-group-lg col-xs-5">
-					    <label class="control-label" for="facilities">Rellenos</label>
+					    <label class="control-label" for="facilities">Rellenos (máx. 4)</label>
 					    <div class="form-group-lg">
 					      <div th:each="facility : ${facilities}">
 					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
@@ -89,15 +88,36 @@
 					      </div>
 					      <div th:each="facility : ${facilities}">
 					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema mantequilla batida sabor Arandanos </label>
+					        <label class="checkbox-inline" th:text="${facility}">Crema mantequilla batida sabor Arándanos </label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
 					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema mantequilla batida Mis frutos Rojos </label>
+					        <label class="checkbox-inline" th:text="${facility}">Crema mantequilla batida Mix frutos Rojos </label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
 					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
 					        <label class="checkbox-inline" th:text="${facility}">Crema vegetal blanca (Bravo)</label>
+
+					      </div>
+					      <div th:each="facility : ${facilities}">
+					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) sabor Lúcuma</label>
+					      </div>
+					      <div th:each="facility : ${facilities}">
+					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) sabor Maracuyá</label>
+					      </div>
+					      <div th:each="facility : ${facilities}">
+					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) sabor Frambuesa</label>
+					      </div>
+					      <div th:each="facility : ${facilities}">
+					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) sabor Arándanos </label>
+					      </div>
+					      <div th:each="facility : ${facilities}">
+					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) Mix frutos Rojos </label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
 					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
@@ -140,11 +160,17 @@
     <div class="form-group">
       <label for="exampleFormControlSelect1">Cobertura</label>
       <select class="form-control" id="exampleSelect3" name="inputCobertura">
-        <option value="1">Ganache chocolate</option>
-        <option value="2">Fondant (diseño elección)</option>
-        <option value="3">Merengue</option>
-        <option value="4">Manjar (adorno con nueces)</option>
-        <option value="5">Crema mantequilla</option>
+        <option value="Ganache de Chocolate">Ganache chocolate</option>
+        <option value="Fondant ">Fondant (diseño elección)</option>
+        <option value="Merengue">Merengue</option>
+        <option value="Manjar (adorno con nueces)">Manjar (adorno con nueces)</option>
+        <option value="Crema mantequilla blanca">Crema mantequilla blanca</option>
+        <option value="Crema mantequilla lúcuma">Crema mantequilla lúcuma</option>
+        <option value="Crema mantequilla maracuyá">Crema mantequilla maracuyá</option>
+        <option value="Crema mantequilla frambuesa">Crema mantequilla frambuesa</option>
+        <option value="Crema mantequilla Mix frutos rojos">Crema mantequilla Mix frutos rojos</option>
+        <option value="Crema mantequilla Arándanos">Crema mantequilla Arándanos</option>
+
       </select>
     </div>
 
