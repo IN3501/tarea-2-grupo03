@@ -4,9 +4,11 @@
 
 {% load static %}
 
-compra exitosa
+compra exitosa. tus productos son:
 
-
+{% for compra in compras %}
+  {{compra}}
+{% endfor%}
 
 
 

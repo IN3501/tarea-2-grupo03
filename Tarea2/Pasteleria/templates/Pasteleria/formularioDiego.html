@@ -29,6 +29,7 @@
 
 
       <form action="/compraExitosa/" method="post">
+      {% csrf_token %}
 
 
 
@@ -52,19 +53,24 @@
         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-table"></i>
-            torta de manjar
+            Torta de manjar
           </div>
           <div class="card-body">
-            <div class="table-responsive">
+            <div >
 
-
+<div class="row">
+  <div class="col">
               <img width="150" height="150"  src="{% static "srcPasteleria/tortamanjar.jpeg" %}" alt="My image">
-
+            </div>
+            <div class="col">
+<p> Torta a base de bizcocho con manjar acompañada con trozos de nuez</p>
+</div>
+</div>
             </div>
           </div>
           <div class="card-footer small text-muted">
 
-            <label for="tortaManar">Cantidad</label>
+            <label for="tortaManjar">Cantidad</label>
             <input id="tortaManjar" name="tortaManjar" type="number">
           </div>
         </div>
@@ -94,14 +100,18 @@
         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-table"></i>
-            torta para novios
+            Torta para novios
           </div>
           <div class="card-body">
-            <div class="table-responsive">
-
-
+            <div >
+<div class="row">
+  <div class="col">
               <img width="150" height="150"  src="{% static "srcPasteleria/tortanovios.jpeg" %}" alt="My image">
-
+            </div>
+            <div class="col">
+<p> Torta especial para matrimonios acompañada de decoradas mini tortas</p>
+</div>
+</div>
             </div>
           </div>
           <div class="card-footer small text-muted">
@@ -120,6 +130,277 @@
       </div>
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <div class="row">
+
+
+         <div class="col">
+      <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-table"></i>
+            Mini tartas
+          </div>
+          <div class="card-body">
+            <div >
+
+<div class="row">
+  <div class="col">
+              <img width="150" height="150"  src="{% static "srcPasteleria/minitartas.JPG" %}" alt="My image">
+            </div>
+            <div class="col">
+<p> Mini tartas de crema chantilly y trozos de frutilla </p>
+</div>
+</div>
+            </div>
+          </div>
+          <div class="card-footer small text-muted">
+
+            <label for="miniTartas">Cantidad</label>
+            <input id="miniTartas" name="miniTartas" type="number">
+          </div>
+        </div>
+
+          </div>
+
+
+        </div>
+
+    </div>      
+
+
+
+
+
+
+
+
+
+    <div class="col">
+      <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-table"></i>
+            Mini Pies de limón
+          </div>
+          <div class="card-body">
+            <div >
+<div class="row">
+  <div class="col">
+              <img width="150" height="150"  src="{% static "srcPasteleria/minipies.JPG" %}" alt="My image">
+            </div>
+            <div class="col">
+<p> Pequeños pies de limón con un dorado perfecto </p>
+</div>
+</div>
+            </div>
+          </div>
+          <div class="card-footer small text-muted">
+            <label for="miniPies">Cantidad</label>
+            <input id="miniPies"   name="miniPies" type="number">
+          </div>
+        </div>
+
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <div class="row">
+
+
+         <div class="col">
+      <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-table"></i>
+            Mini hamburguesas
+          </div>
+          <div class="card-body">
+            <div >
+
+<div class="row">
+  <div class="col">
+              <img width="150" height="150"  src="{% static "srcPasteleria/minihamburgresas.jpeg" %}" alt="My image">
+            </div>
+            <div class="col">
+<p> Mini hamburguesas de vacuno con lechuga y queso cheddar </p>
+</div>
+</div>
+            </div>
+          </div>
+          <div class="card-footer small text-muted">
+
+            <label for="miniHamburguesas">Cantidad</label>
+            <input id="miniHamburguesas" name="miniHamburguesas" type="number">
+          </div>
+        </div>
+
+          </div>
+
+
+        </div>
+
+    </div>      
+
+
+
+
+
+
+
+
+
+    <div class="col">
+      <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-table"></i>
+            Empanaditas
+          </div>
+          <div class="card-body">
+            <div >
+<div class="row">
+  <div class="col">
+              <img width="150" height="150"  src="{% static "srcPasteleria/empanaditas.JPG" %}" alt="My image">
+            </div>
+            <div class="col">
+<p> Ricas empanaditas de pino hechas al horno </p>
+</div>
+</div>
+            </div>
+          </div>
+          <div class="card-footer small text-muted">
+            <label for="empanaditas">Cantidad</label>
+            <input id="empanaditas"   name="empanaditas" type="number">
+          </div>
+        </div>
+
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
 
 
 

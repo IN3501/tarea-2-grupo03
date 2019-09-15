@@ -11,4 +11,5 @@ urlpatterns =[
     path('registro/', views.registro, name='registro'),
     path('registro/tryRegistrar/', views.tryRegistrar, name='tryRegistrar'),
     path("mostrar_resultado/", views.recuperar, name='mostrar_resultado'),
+    path("compraExitosa/", views.compraExitosa, name='compraExitosa'),
 ]

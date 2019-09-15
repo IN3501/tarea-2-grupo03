@@ -62,3 +62,13 @@ def recuperar(request):
     #    comida.append(request.POST["bebida"])
     #print("comida")
 
+def compraExitosa(request):
+    print(request.POST)
+
+    compras=[]
+    for keyCompra in request.POST.keys():
+        if keyCompra!='csrfmiddlewaretoken'  and request.POST[keyCompra]!="":
+            compras.append([keyCompra,request.POST[keyCompra]])
+
+    print(compras)
+    return render(request, "Pasteleria/compraExitosa.html",{'compras':compras})
