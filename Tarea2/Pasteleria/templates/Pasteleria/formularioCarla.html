@@ -51,97 +51,97 @@
 					    <label class="control-label" for="facilities">Rellenos (máx. 4)</label>
 					    <div class="form-group-lg">
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Manjar</label>
+					        <input id="manjar" type="checkbox" name="Manajar" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="manjar" class="checkbox-inline" th:text="${facility}">Manjar</label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Mermelada Frambuesa</label>
+					        <input id="Mermelada Frambuesa" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" name="Mermelada Frambuesa"/>
+					        <label for="Mermelada Frambuesa" class="checkbox-inline" th:text="${facility}">Mermelada Frambuesa</label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Mermelada Frutilla</label>
+					        <input id="Mermelada Frutilla" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" name="Mermelada Frutilla"/>
+					        <label for="Mermelada Frutilla" class="checkbox-inline" th:text="${facility}">Mermelada Frutilla</label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Mermelada Mix de frutos rojos</label>
+					        <input id="Mermelada Mix frutos rojos" name="Mermelada Mix frutos de rojos" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="Mermelada Mix frutos rojos" class="checkbox-inline" th:text="${facility}">Mermelada Mix de frutos rojos</label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Mermelada Durazno</label>
+					        <input id="Mermelada Durazno" name="Mermelada Durazno" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="Mermelada Durazno" class="checkbox-inline" th:text="${facility}">Mermelada Durazno</label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema mantequilla batida Blanca</label>
+					        <input id="Crema mantequilla batida blanca" name="Creama mantequilla batida blanca" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="Crema mantequilla batida blanca" class="checkbox-inline" th:text="${facility}">Crema mantequilla batida Blanca</label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema mantequilla batida sabor Lucuma</label>
+					        <input id="CremaLucuma" name="Crema mantequilla batida sabor lucuma" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="CremaLucuma" class="checkbox-inline" th:text="${facility}">Crema mantequilla batida sabor Lucuma</label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema mantequilla batida sabor Maracuyá</label>
+					        <input id="cremaMaracuya" name="Crema mantequilla batida sabor Maracuyá" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="cremaMaracuya" class="checkbox-inline" th:text="${facility}">Crema mantequilla batida sabor Maracuyá</label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema mantequilla batida sabor Frambuesa</label>
+					        <input id="crema frambuesa" name="Crema mantequilla batida sabor Frambuesa" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="crema frambuesa"class="checkbox-inline" th:text="${facility}">Crema mantequilla batida sabor Frambuesa</label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema mantequilla batida sabor Arándanos </label>
+					        <input id="cremaArandanos" name="Crema mantequilla batida sabor Arándanos" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="cremaArandanos" class="checkbox-inline" th:text="${facility}">Crema mantequilla batida sabor Arándanos </label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema mantequilla batida Mix frutos Rojos </label>
+					        <input id="cremaMixFrutosRojos" name="Crema mantequilla batida Mix frutos Rojos"type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="cremaMixFrutosRojos"class="checkbox-inline" th:text="${facility}">Crema mantequilla batida Mix frutos Rojos </label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema vegetal blanca (Bravo)</label>
+					        <input id="cremaVegetalBlanca" name="Crema vegetal blanca (Bravo)" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="cremaVegetalBlanca" class="checkbox-inline" th:text="${facility}">Crema vegetal blanca (Bravo)</label>
 
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) sabor Lúcuma</label>
+					        <input id="cremaVegetalLucuma" name="Crema vegetal (Bravo) sabor Lúcuma" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="cremaVegetalLucuma" class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) sabor Lúcuma</label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) sabor Maracuyá</label>
+					        <input id="cremaVegetalMaracuya" name="Crema vegetal (Bravo) sabor Maracuyá" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="cremaVegetalMaracuya" class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) sabor Maracuyá</label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) sabor Frambuesa</label>
+					        <input id="cremaVegetalFrambuesa" name="Crema vegetal (Bravo) sabor Frambuesa" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="cremaVegetalFrambuesa" class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) sabor Frambuesa</label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) sabor Arándanos </label>
+					        <input id="cremaVegetalArandanos" name="Crema vegetal (Bravo) sabor Arándanos" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="cremaVegetalArandanos" class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) sabor Arándanos </label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) Mix frutos Rojos </label>
+					        <input id="cremaVegetalMixFrutosRojos" name="Crema vegetal (Bravo) Mix frutos Rojos" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="cremaVegetalMixFrutosRojos" class="checkbox-inline" th:text="${facility}">Crema vegetal (Bravo) Mix frutos Rojos </label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema Pastelera </label>
+					        <input id="cremaPastelera" name="Crema Pastelera" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="cremaPastelera" class="checkbox-inline" th:text="${facility}">Crema Pastelera </label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Crema Inglesa </label>
+					        <input id="cremaInglesa" name="Crema Inglesa" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="cremaInglesa" class="checkbox-inline" th:text="${facility}">Crema Inglesa </label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Ganache Chocolate negro </label>
+					        <input id="ganacheChocolateNegro" name="Ganache Chocolate negro" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="ganacheChocolateNegro" class="checkbox-inline" th:text="${facility}">Ganache Chocolate negro </label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Duraznos </label>
+					        <input id="duraznos" name="Duraznos" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="duraznos" class="checkbox-inline" th:text="${facility}">Duraznos </label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Piña</label>
+					        <input id="piña" name="Piña" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="piña" class="checkbox-inline" th:text="${facility}">Piña</label>
 					      </div>
 					      <div th:each="facility : ${facilities}">
-					        <input type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
-					        <label class="checkbox-inline" th:text="${facility}">Frutillas </label>
+					        <input id="frutillas" name="Frutillas" type="checkbox" th:field="*{checkedItems}" th:value="${facility}" />
+					        <label for="Frutillas" class="checkbox-inline" th:text="${facility}">Frutillas </label>
 					      </div>
 					    </div>
 					  </div>

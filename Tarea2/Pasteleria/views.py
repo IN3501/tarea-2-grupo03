@@ -37,12 +37,22 @@ def recuperar(request):
     porcion=request.POST["inputPorciones"]
     base=request.POST["inputBase"]
     cobertura=request.POST["inputCobertura"]
-    relleno=resquest.POST.keys("csrfmiddlewaretoken")
     diccionario={}
     diccionario["PORCIONES"]=porcion
     diccionario["BASE"]=base
     diccionario["COBERTURA"]=cobertura
-    diccionario["RELLENO"]=relleno
+
+    print(request.POST)
+    rellenos=[]
+    for k in request.POST.keys():
+
+        if request.POST[k]=='on':
+
+            rellenos.append(k)
+    print(rellenos)
+    diccionario["RELLENO"]=rellenos
+
+
     return render(request, "Pasteleria/mostrar_resultado.html", diccionario)
 
 
@@ -50,4 +60,5 @@ def recuperar(request):
     #    comida.append(request.POST["snack"])
     #if "bebida" in request.POST:
     #    comida.append(request.POST["bebida"])
-    #print("comida") 
+    #print("comida")
+
