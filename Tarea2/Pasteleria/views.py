@@ -32,3 +32,13 @@ def tryRegistrar(request):
     datos.append(request.POST["correo"])
     datos.append(request.POST["telefono"])
     return render(request,'Pasteleria/home.html', {'llaveDatos':datos})
+
+def recuperar(request):
+    porcion=request.POST["inputPorciones"]
+    base=request.POST["inputBase"]
+    cobertura=request.POST["inputCobertura"]
+    diccionario={}
+    diccionario["PORCIONES"]=porcion
+    diccionario["BASE"]=base
+    diccionario["COBERTURA"]=cobertura
+    return render(request, "mostrar_resultado.html", diccionario)
