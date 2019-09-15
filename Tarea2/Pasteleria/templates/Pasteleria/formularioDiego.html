@@ -2,7 +2,7 @@
 
 {%block page %}
 
-
+{% load static %}
 
      <!--esta parte sera esatica, pero debe ser eliminada-->
       <div id="content-wrapper">
@@ -14,89 +14,164 @@
         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-table"></i>
-            Tareas
+            Productos
           </div>
           <div class="card-body">
             <div class="table-responsive">
-              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-
-                <thead>
-                  <tr bgcolor="#fffaf0">
-                    <th>Curso</th>
-                    <th>Tarea</th>
-                    <th>Creador</th>
-                    <th>Fecha Creacion</th>
-                    <th>Fecha Finalizacion</th>
-                    <th>Estado</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr bgcolor="#e6e6fa">
-                    <td>CC4401-1</td>
-                    <td>Tarea 3</td>
-                    <td>Jocelyn</td>
-                    <td>15/04/19</td>
-                    <td>--/--/--</td>
-                    <td>Pendiente</td>
-                  </tr>
-                  <tr bgcolor="#e6e6fa">
-                    <td>CC4401-1</td>
-                    <td>Tarea 2</td>
-                    <td>Jocelyn</td>
-                    <td>27/03/19</td>
-                    <td>--/--/--</td>
-                    <td>Pendiente</td>
-                  </tr>
-
-                  <tr bgcolor="#e6e6fa">
-                    <td>CC4401-1</td>
-                    <td>Tarea 1</td>
-                    <td>Jocelyn</td>
-                    <td>02/03/19</td>
-                    <td>--/--/--</td>
-                    <td>Pendiente</td>
-                  </tr>
-
-                  <tr bgcolor="#90ee90">
-                    <td>CC4401-1</td>
-                    <td>Tarea 1</td>
-                    <td>Jocelyn</td>
-                    <td>10/10/18</td>
-                    <td>20/10/18</td>
-                    <td>Terminado</td>
-                  </tr>
-                  <tr bgcolor="#90ee90">
-                    <td>CC4401-1</td>
-                    <td>Tarea 1</td>
-                    <td>Jocelyn</td>
-                    <td>07/09/18</td>
-                    <td>09/09/18</td>
-                    <td>Terminado</td>
-                  </tr>
-                </tbody>
-
-              </table>
 
 
-                <nav aria-label="...">
-                  <ul class="pagination">
-                    <li class="page-item disabled">
-                      <span class="page-link">anterior</span>
-                    </li>
 
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
 
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
 
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
 
-                    <li class="page-item">
-                      <a class="page-link" href="#">siguiente</a>
-                    </li>
 
-                  </ul>
-                </nav>
+
+
+
+      <form action="/compraExitosa/" method="post">
+
+
+
+
+
+
+
+
+
+
+    <div class="row">
+
+
+         <div class="col">
+      <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-table"></i>
+            torta de manjar
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+
+
+              <img width="150" height="150"  src="{% static "srcPasteleria/tortamanjar.jpeg" %}" alt="My image">
+
+            </div>
+          </div>
+          <div class="card-footer small text-muted">
+
+            <label for="tortaManar">Cantidad</label>
+            <input id="tortaManjar" name="tortaManjar" type="number">
+          </div>
+        </div>
+
+          </div>
+
+
+        </div>
+
+    </div>      
+
+
+
+
+
+
+
+
+
+    <div class="col">
+      <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-table"></i>
+            torta para novios
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+
+
+              <img width="150" height="150"  src="{% static "srcPasteleria/tortanovios.jpeg" %}" alt="My image">
+
+            </div>
+          </div>
+          <div class="card-footer small text-muted">
+            <label for="tortanovios">Cantidad</label>
+            <input id="tortaNovios"   name="tortaNovios" type="number">
+          </div>
+        </div>
+
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+        <button type="submit" class="btn btn-primary">Comprar</button>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
           </div>
           <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
@@ -104,15 +179,6 @@
 
           </div>
 
-          <!-- /.container-fluid -->
-          <!-- Sticky Footer -->
-          <footer class="sticky-footer">
-            <div class="container my-auto">
-              <div class="copyright text-center my-auto">
-                <span>Smity weber jaeger man jensen 2019</span>
-              </div>
-            </div>
-          </footer>
 
         </div>
         <!-- /.content-wrapper -->
